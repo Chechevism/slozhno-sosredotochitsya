@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+.idea
+.vscode
+.prettierrc
+gulpfile.js
+package-lock.json
+package.json
+stylelint.config.js
