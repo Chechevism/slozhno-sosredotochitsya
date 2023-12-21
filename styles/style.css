@@ -1,6 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--font-family, sans-serif);
@@ -52,7 +51,7 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  box-shadow: 11px 0px 4px 2px var(--accent-color);
+  box-shadow: 11px 0 4px 2px var(--accent-color);
   background-color: transparent;
   visibility: var(--visibility);
 }
@@ -103,7 +102,7 @@ button:focus {
 }
 
 button:focus-visible {
-  box-shadow: 0px 1px 0 var(--accent-color);
+  box-shadow: 0 1px 0 var(--accent-color);
 }
 
 button:hover {
@@ -153,7 +152,6 @@ main {
   border-block-end: 1px solid var(--text-color);
 }
 
-
 section {
   display: grid;
 }
@@ -174,7 +172,7 @@ section {
   gap: 10px;
 }
 
-.article__grid:last-child{
+.article__grid:last-child {
   margin-block-end: 30px;
 }
 
@@ -220,22 +218,21 @@ footer {
   position: relative;
 }
 
-@media (min-width: 0px) {
-  
+@media (min-width: 0) {
+
   .header {
     padding: 10px;
     margin-block-end: 40px;
   }
 
   .header__theme-menu {
-   
     display: grid;
     justify-content: end;
   }
 
   .decoration {
-      right: 30px;
-      top: 11px;
+    right: 30px;
+    top: 11px;
   }
 
   .decorated-zone::before {
@@ -246,7 +243,7 @@ footer {
   .decorated-zone::after {
     bottom: 10px;
     left: 10px;
-}
+  }
 
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -258,7 +255,7 @@ footer {
 
   .main__text-link {
     text-decoration: none;
-    text-shadow: 2px 2px 0px var(--accent-color);
+    text-shadow: 2px 2px 0 var(--accent-color);
   }
 
   section {
@@ -281,7 +278,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  
+
   .page {
     max-width: 768px;
   }
@@ -289,22 +286,21 @@ footer {
   .decoration {
     right: 40px;
     top: 21px;
-}
-
-.decorated-zone::before {
-  top: 20px;
-  right: 20px;
-}
-
-.decorated-zone::after {
-  bottom: 20px;
-  left: 20px;
-}
-
-  .header{
-    padding: 20px;
   }
 
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .header {
+    padding: 20px;
+  }
 
   .header__title {
     position: relative;
@@ -334,7 +330,7 @@ footer {
     margin-block-start: 50px;
   }
 
-  .section__what .article__grid{
+  .section__what .article__grid {
     grid-column-start: 1;
     grid-column-end: 4;
   }
@@ -345,8 +341,8 @@ footer {
   }
 
   .section__how .section__title {
-   grid-row-start: 1;
-   grid-row-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 8;
   }
 
   .section__why .article__grid {
@@ -410,7 +406,6 @@ footer {
     padding: 0 20px;
   }
 
-
   .section__what span {
     display: block;
   }
@@ -425,7 +420,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  
+
   .page {
     max-width: 1024px;
   }
@@ -458,7 +453,7 @@ footer {
 
   .section__what {
     justify-content: center;
-    grid-template-columns:  repeat(3, 40.95vh);
+    grid-template-columns: repeat(3, 40.95vh);
   }
 
   .section__what .section__title {
@@ -469,15 +464,14 @@ footer {
 
   .section__what h2 {
     display: grid;
-  
   }
 
   .article__grid {
     grid-template-rows: 0fr;
   }
 
-  .section__what .article__grid{
-    grid-column-start:auto;
+  .section__what .article__grid {
+    grid-column-start: auto;
     grid-column-end: auto;
   }
 

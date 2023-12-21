@@ -16,9 +16,8 @@
   --subtitle-color: #353430;
   --background-img: url(../images/cover-image-light.png);
   --visibility: hidden;
-  --shadow-color: #FF8DCB;
+  --shadow-color: #ff8dcb;
 }
-
 
 @media (prefers-color-scheme: light) {
 
@@ -34,23 +33,20 @@
     --heading-color: #ffc2e6;
     --background-img: url(../images/cover-image-light.png);
     --visibility: hidden;
-    --shadow-color: #FF8DCB;
+    --shadow-color: #ff8dcb;
   }
-
 }
 
 @media (min-width: 1024px) {
-  
+
   :root {
     --shadow-color: #ff0070;
   }
 }
 
 @media (min-width: 1024px) {
-  
+
   .page.theme_light {
     --shadow-color: #ff0070;
   }
 }
-
-
