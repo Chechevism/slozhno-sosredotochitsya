@@ -16,6 +16,9 @@
 .decoration {
   position: absolute;
   color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .decorated-zone::before {
@@ -51,8 +54,8 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  box-shadow: 11px 0 4px 2px var(--accent-color);
-  background-color: transparent;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
   visibility: var(--visibility);
 }
 
@@ -88,6 +91,7 @@
   min-width: 70px;
   min-height: 27px;
   line-height: 25px;
+  cursor: pointer;
 }
 
 button {
@@ -102,7 +106,7 @@ button:focus {
 }
 
 button:focus-visible {
-  box-shadow: 0 1px 0 var(--accent-color);
+  box-shadow: 0 1px 0 var(--decoration-color);
 }
 
 button:hover {
@@ -154,6 +158,7 @@ main {
 
 section {
   display: grid;
+  gap: 20px;
 }
 
 .section__title {
@@ -172,9 +177,6 @@ section {
   gap: 10px;
 }
 
-.article__grid:last-child {
-  margin-block-end: 30px;
-}
 
 .article__grid h4 {
   margin-block-end: 10px;
@@ -231,7 +233,7 @@ footer {
   }
 
   .decoration {
-    right: 30px;
+    right: 20px;
     top: 11px;
   }
 
@@ -258,14 +260,13 @@ footer {
     text-shadow: 2px 2px 0 var(--accent-color);
   }
 
-  section {
-    gap: 20px;
-    margin-block-end: 20px;
+  section:not(:last-child){
+    margin-block-end: 50px;
   }
 
   .section__images {
     gap: 10px;
-    margin-block-end: 41px;
+    margin-block-end: 40px;
   }
 
   footer {
@@ -284,7 +285,7 @@ footer {
   }
 
   .decoration {
-    right: 40px;
+    right: 30px;
     top: 21px;
   }
 
@@ -314,8 +315,8 @@ footer {
     align-self: center;
   }
 
-  section {
-    margin-block-end: 0;
+  section:not(:last-child) {
+    margin-block-end: 80px;
   }
 
   .section__why {
@@ -326,8 +327,7 @@ footer {
   }
 
   .section__what {
-    grid-template-columns: 23vh 22vh 22vh;
-    margin-block-start: 50px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .section__what .article__grid {
@@ -337,12 +337,12 @@ footer {
 
   .section__how {
     grid-template-columns: 1.5fr 3fr;
-    margin-block-start: 50px;
+    
   }
 
   .section__how .section__title {
     grid-row-start: 1;
-    grid-row-end: 8;
+    grid-row-end: 7;
   }
 
   .section__why .article__grid {
@@ -357,7 +357,6 @@ footer {
 
   .section__images {
     gap: 20px;
-    margin-block-start: 30px;
     margin-block-end: 60px;
   }
 
@@ -449,11 +448,6 @@ footer {
 
   .section__why {
     column-gap: 10px;
-  }
-
-  .section__what {
-    justify-content: center;
-    grid-template-columns: repeat(3, 40.95vh);
   }
 
   .section__what .section__title {
