@@ -177,7 +177,6 @@ section {
   gap: 10px;
 }
 
-
 .article__grid h4 {
   margin-block-end: 10px;
 }
@@ -260,7 +259,7 @@ footer {
     text-shadow: 2px 2px 0 var(--accent-color);
   }
 
-  section:not(:last-child){
+  section:not(:last-child) {
     margin-block-end: 50px;
   }
 
@@ -337,7 +336,6 @@ footer {
 
   .section__how {
     grid-template-columns: 1.5fr 3fr;
-    
   }
 
   .section__how .section__title {
