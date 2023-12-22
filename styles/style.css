@@ -177,10 +177,6 @@ section {
   gap: 10px;
 }
 
-.article__grid h4 {
-  margin-block-end: 10px;
-}
-
 .subtitle__bold {
   font-weight: var(--weight-bold);
   font-family: var(--font-family);
@@ -220,7 +216,6 @@ footer {
 }
 
 @media (min-width: 0) {
-
   .header {
     padding: 10px;
     margin-block-end: 40px;
@@ -278,7 +273,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-
   .page {
     max-width: 768px;
   }
@@ -417,7 +411,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-
   .page {
     max-width: 1024px;
   }
